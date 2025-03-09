@@ -14,16 +14,14 @@ Python – Core game logic
 Pygame – GUI rendering for the chessboard & pieces
 Python-Chess – Chess logic, move validation, and legal moves
 Stockfish – AI engine for strong computer moves
+
 🎮 How to Play
 Click on a piece to select it.
 Black dotted lines will indicate possible move directions.
 Click on a valid square to move the piece.
 The AI will automatically respond after your move.
 The game continues until checkmate, stalemate, or draw.
-🏗️ Project Structure
-graphql
-Copy
-Edit
+
 chess-ai-game/
 │── images/                # Chess piece images (wp.png, bp.png, etc.)
 │── chess_game.py          # Main Pygame GUI for playing chess
