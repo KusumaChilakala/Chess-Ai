@@ -1,0 +1,16 @@
+while running:
+    screen.fill((255, 255, 255))
+
+    # Draw pieces
+    if "wp" in piece_images:
+        screen.blit(piece_images["wp"], (100, 100))
+    if "bp" in piece_images:
+        screen.blit(piece_images["bp"], (200, 200))
+
+    pygame.display.flip()  # Update display
+    pygame.event.pump()  # ✅ Allows Pygame to handle events
+
+    # Handle exit event
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
